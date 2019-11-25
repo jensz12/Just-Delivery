@@ -1,2 +1,2 @@
 # Just-Delivery
-Deliver App for Just Eat - iPhone???
+Deliver App for Just Eat
