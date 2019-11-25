@@ -1,2 +1,2 @@
 # Just-Delivery
-Deliver App for Just Eat
+Delivery App for Just Eat
