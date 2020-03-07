@@ -76,12 +76,6 @@
 <div class="container">
   <div class="row">
     <div class="col-lg-12 col-md-12">
-      <div class="jumbotron">
-        <div class="text-center">
-          <img src="https://justeat.jensz12.com/img/logo/1024.png" class="rounded" alt="" width="200px">
-        </div>
-          <h1><?php echo $this->title; ?></h1>
-      </div>
       <?php $this->yieldView(); ?>
       <div class="card">
         <div class="card-body">
