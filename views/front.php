@@ -33,7 +33,7 @@
         <img src="/img/byer/cph.png" class="card-img-top" alt="København">
     <div class="card-body">
         <h5 class="card-title">København</h5>
-            <p class="card-text">Dækker hele Storkøbenhavn, inklusiv Rungsted</p>
+            <p class="card-text">Dækker København, Frederiksberg & Tårnby</p>
             <a href="/parkering/cph" class="btn btn-dark"><i class="fal fa-parking fa-fw"></i> Parkering</a>
     </div>
     </div>
