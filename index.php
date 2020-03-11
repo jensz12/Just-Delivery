@@ -12,10 +12,6 @@ $klein->respond('GET', '/', function($request, $response, $service) {
 	$service->render('views/front.php');
 });
 
-$klein->respond('GET', '/city', function($request, $response, $service) {
-	$service->title = 'Vælg by';
-	$service->render('views/city.php');
-});
 
 $klein->respond('GET', '/parkering/hilleroed', function($request, $response, $service) {
 
@@ -189,6 +185,14 @@ $klein->respond('GET', '/parkering/aalborg', function($request, $response, $serv
 	$service->title = 'Parkeringsguide - Aalborg';
 	$service->rests = $rests; 
 	$service->render('views/parkering.php');
+});
+
+$klein->onHttpError(function ($code, $router) {
+	if ($code == 404) {
+		$service = $router->service();
+		$service->title = '404 - Siden blev ikke fundet';
+		$service->render('views/404.php');
+  }
 });
 
 $klein->dispatch();
