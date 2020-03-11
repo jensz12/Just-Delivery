@@ -63,6 +63,12 @@
         <a class="nav-link" href="/parkering/cph"><i class="fal fa-parking fa-fw"></i> København</a>
       </li>
       <li class="nav-item">
+        <a class="nav-link" href="/parkering/nord"><i class="fal fa-parking fa-fw"></i> Nord for København</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/parkering/vestegnen"><i class="fal fa-parking fa-fw"></i> Vestegnen</a>
+      </li>
+      <li class="nav-item">
         <a class="nav-link" href="/parkering/odense"><i class="fal fa-parking fa-fw"></i> Odense</a>
       </li>
       <li class="nav-item">

@@ -37,7 +37,7 @@ $klein->respond('GET', '/parkering/hilleroed', function($request, $response, $se
     $rests[] = $rest;
   }
 
-  $service->title = 'DEVELOPMENT: Parkeringsguide - Hillerød';
+  $service->title = 'Parkeringsguide - Hillerød';
   $service->rests = $rests; 
 	$service->render('views/parkering.php');
 });
@@ -62,7 +62,7 @@ $klein->respond('GET', '/parkering/odense', function($request, $response, $servi
     $rests[] = $rest;
   }
 
-  $service->title = 'DEVELOPMENT: Parkeringsguide - Odense';
+  $service->title = 'Parkeringsguide - Odense';
   $service->rests = $rests; 
 	$service->render('views/parkering.php');
 });
@@ -87,7 +87,57 @@ $klein->respond('GET', '/parkering/cph', function($request, $response, $service)
     $rests[] = $rest;
   }
 
-  $service->title = 'DEVELOPMENT: Parkeringsguide - CPH';
+  $service->title = 'Parkeringsguide - København, Frederiksberg & Tårnby';
+  $service->rests = $rests; 
+	$service->render('views/parkering.php');
+});
+
+$klein->respond('GET', '/parkering/nord', function($request, $response, $service) {
+
+  $mysqli = new mysqli('localhost' , 'jensz12_je_nord' , '4k[A}1riR1Nw' , 'jensz12_je_nord');
+  $mysqli->set_charset('utf8');
+
+  if ($mysqli->connect_errno)
+    die('Der kunne ikke oprettes forbindelse til databasen. Prøv igen om lidt');
+
+  $sql = 'SELECT * FROM rest ORDER BY navn ASC';
+  $result = $mysqli->query($sql);
+ 
+  $rests = []; 
+
+  while ($rest = $result->fetch_assoc()) {
+    $rest['under_rests'] = get_under_rests($mysqli, $rest['id']);
+    $rest['under_rests_lowercase'] = array_map('mb_strtolower', $under_rests);
+
+    $rests[] = $rest;
+  }
+
+  $service->title = 'Parkeringsguide - Nord for København';
+  $service->rests = $rests; 
+	$service->render('views/parkering.php');
+});
+
+$klein->respond('GET', '/parkering/vestegnen', function($request, $response, $service) {
+
+  $mysqli = new mysqli('localhost' , 'jensz12_vest' , '0H%[4)Xn(n&t' , 'jensz12_je_vest');
+  $mysqli->set_charset('utf8');
+
+  if ($mysqli->connect_errno)
+    die('Der kunne ikke oprettes forbindelse til databasen. Prøv igen om lidt');
+
+  $sql = 'SELECT * FROM rest ORDER BY navn ASC';
+  $result = $mysqli->query($sql);
+ 
+  $rests = []; 
+
+  while ($rest = $result->fetch_assoc()) {
+    $rest['under_rests'] = get_under_rests($mysqli, $rest['id']);
+    $rest['under_rests_lowercase'] = array_map('mb_strtolower', $under_rests);
+
+    $rests[] = $rest;
+  }
+
+  $service->title = 'Parkeringsguide - Vestegnen';
   $service->rests = $rests; 
 	$service->render('views/parkering.php');
 });
@@ -112,7 +162,7 @@ $klein->respond('GET', '/parkering/roskilde', function($request, $response, $ser
     $rests[] = $rest;
   }
 
-  $service->title = 'DEVELOPMENT: Parkeringsguide - Roskilde';
+  $service->title = 'Parkeringsguide - Roskilde';
   $service->rests = $rests; 
 	$service->render('views/parkering.php');
 });
@@ -137,7 +187,7 @@ $klein->respond('GET', '/parkering/aarhus', function($request, $response, $servi
     $rests[] = $rest;
   }
 
-  $service->title = 'DEVELOPMENT: Parkeringsguide - Aarhus';
+  $service->title = 'Parkeringsguide - Aarhus';
   $service->rests = $rests; 
 	$service->render('views/parkering.php');
 });
@@ -162,7 +212,7 @@ $klein->respond('GET', '/parkering/aalborg', function($request, $response, $serv
     $rests[] = $rest;
   }
 
-  $service->title = 'DEVELOPMENT: Parkeringsguide - Aalborg';
+  $service->title = 'Parkeringsguide - Aalborg';
   $service->rests = $rests; 
 	$service->render('views/parkering.php');
 });

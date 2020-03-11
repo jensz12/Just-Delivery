@@ -33,8 +33,28 @@
         <img src="/img/byer/cph.png" class="card-img-top" alt="København">
     <div class="card-body">
         <h5 class="card-title">København</h5>
-            <p class="card-text">Dækker København, Frederiksberg & Tårnby</p>
+            <p class="card-text">Dækker København, Frederiksberg, Tårnby & Kastrup</p>
             <a href="/parkering/cph" class="btn btn-dark"><i class="fal fa-parking fa-fw"></i> Parkering</a>
+    </div>
+    </div>
+</div>
+<div class="col-sm-6">
+    <div class="card">
+        <img src="/img/byer/cph.png" class="card-img-top" alt="København">
+    <div class="card-body">
+        <h5 class="card-title">Vestegnen</h5>
+            <p class="card-text">Dækker Rødovre, Hvidovre, Glostrup, Brøndby, Høje-Taastrup, Greve & Ishøj</p>
+            <a href="/parkering/vestegnen" class="btn btn-dark"><i class="fal fa-parking fa-fw"></i> Parkering</a>
+    </div>
+    </div>
+</div>
+<div class="col-sm-6">
+    <div class="card">
+        <img src="/img/byer/cph.png" class="card-img-top" alt="København">
+    <div class="card-body">
+        <h5 class="card-title">Nord for København</h5>
+            <p class="card-text">Dækker Gentofte, Lyngby-Taarbæk, Gladsaxe, Herlev, Rudersdal & Hørsholm</p>
+            <a href="/parkering/nord" class="btn btn-dark"><i class="fal fa-parking fa-fw"></i> Parkering</a>
     </div>
     </div>
 </div>

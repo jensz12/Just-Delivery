@@ -3,6 +3,7 @@
     <input type="text" autofocus class="form-control" id="rest-find" aria-describedby="" placeholder="Indtast navn">
 </div>
 
+
 <div class="row">
 <?php foreach ($this->rests as $rest): ?>
   <div class="col-sm-6 rest" data-search="<?php echo mb_strtolower($rest['navn']).' '.implode(' ', $rest['under_rests_lowercase']); ?>">

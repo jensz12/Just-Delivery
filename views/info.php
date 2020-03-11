@@ -5,14 +5,6 @@
     <li>Knappen til at åbne tankdækslet, sidder ved døren til føresæddet, nede ved gulvet</li>
     <li>Dæktrykket på fordækkene skal være 2.3 bar / 33 PSI. Dæktrykket på bagdækkene skal være 2.2 bar / 32 PSI.</li>
     </ul>
-    <h3>Nummerplader</h3>
-    <ul>
-    <li>Aab01: BX 29 407</li>
-    <li>Aab02: BS 95 015</li>
-    <li>Aab03: BT 88 896</li>
-    <li>Aab04: BT 88 841</li>
-    <li>Aab05: CE Resten kommer snart</li>
-    </ul>
 </div>
 <div class="jumbotron">
   <h2>Just Eat Dresscode</h2>

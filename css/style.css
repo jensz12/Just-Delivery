@@ -6,7 +6,11 @@ body {
 	background-attachment: fixed;
 	height: 100%;
 	font-family: 'Roboto', sans-serif;
+	@supports (-webkit-touch-callout: inherit) {
+		background-attachment: scroll;
+	  }
 }
+
 .img {
   margin: 30px;
 }
@@ -22,7 +26,7 @@ body {
     margin-top: 70px;
 }
 a:link, a:visited {
-	color: #ffffff;
+	color: rgb(102, 102, 102);
 	text-decoration: none;
 }
 a:hover, a:active {

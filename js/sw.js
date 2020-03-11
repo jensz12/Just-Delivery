@@ -7,27 +7,6 @@ const filesToCache = [
   '/img/logo/512.png',
   '/img/logo/1024.png',
   '/img/logo/je.png',
-  '/rest/kastet.png',
-  '/rest/jamesrobertson.png',
-  '/rest/carlsjr.png',
-  '/rest/aalborgstreetfood.jpg',
-  '/rest/grillen.png',
-  '/rest/esaan.png',
-  '/rest/amor.PNG',
-  '/rest/jensens.png',
-  '/rest/thien-nhi.png',
-  '/rest/bogo.png',
-  '/rest/bollywood.jpg',
-  '/rest/falafel.png',
-  '/rest/grill-sandwich.png',
-  '/rest/highway66.png',
-  '/rest/katjas.png',
-  '/rest/southindian.png',
-  '/rest/bk.svg',
-  '/rest/sunset.svg',
-  '/img/andet/je-back.jpg',
-  '/img/andet/je-bg.png',
-  '/img/andet/back.jpg'
 ];
 
 // Install
@@ -44,6 +23,7 @@ self.addEventListener('install', function(e) {
 		})
 	);
 });
+
 
 // Activate
 self.addEventListener('activate', function(e) {
