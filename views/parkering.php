@@ -3,10 +3,9 @@
     <input type="text" autofocus class="form-control" id="rest-find" aria-describedby="" placeholder="Indtast navn">
 </div>
 
-
 <div class="row">
 <?php foreach ($this->rests as $rest): ?>
-  <div class="col-sm-6 rest" data-search="<?php echo mb_strtolower($rest['navn']).' '.implode(' ', $rest['under_rests_lowercase']); ?>">
+  <div class="col-sm-6 rest" data-search="<?php echo remove_accents($rest['navn']); ?>">
     <div class="card">
       <div class="card-body">
         <h2 class="card-title"><?php echo $rest['navn']; ?></h2>
