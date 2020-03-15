@@ -12,6 +12,11 @@ $klein->respond('GET', '/', function($request, $response, $service) {
 	$service->render('views/front.php');
 });
 
+$klein->respond('GET', '/bg', function($request, $response, $service) {
+	$service->title = 'Baggrunde';
+	$service->render('views/bg.php');
+});
+
 
 $klein->respond('GET', '/parkering/hilleroed', function($request, $response, $service) {
 

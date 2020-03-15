@@ -1,5 +1,5 @@
 body {
-	background-image: url(https://dev.justeat.jensz12.com/img/andet/kbh-back.jpg);
+	background-image: url(https://justeat.jensz12.com/img/andet/kbh-back.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center center;
@@ -11,7 +11,7 @@ body {
 @supports (-webkit-overflow-scrolling: touch) {
 
 	body { 
-		background-attachment: fixed;
+		background-attachment: scroll;
 	}
   }
 
