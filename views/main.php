@@ -10,7 +10,7 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="@jensz12">
 <meta name="twitter:creator" content="@jensz12">
-<meta name="twitter:title" content="<?php echo $this->title; ?>  - Just Eat Delivery>
+<meta name="twitter:title" content="<?php echo $this->title; ?>  - Just Eat Delivery">
 <meta name="twitter:description" content="<?php echo $this->title; ?>  - Just Eat Delivery">
 <meta name="twitter:image:src" content="https://justeat.jensz12.com/img/logo/1024.png">
 <link rel="icon" href="https://justeat.jensz12.com/img/logo/1024.png">
