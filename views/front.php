@@ -40,7 +40,7 @@
 </div>
 <div class="col-sm-6">
     <div class="card">
-        <img src="/img/byer/glostrup.svg" class="card-img-top" alt="Vestegnen" width="300px">
+        <img src="/img/byer/glostrup.png" class="card-img-top" alt="Vestegnen" width="300px">
     <div class="card-body">
         <h5 class="card-title">Vestegnen</h5>
             <p class="card-text">Dækker Rødovre, Hvidovre, Glostrup, Brøndby, Høje-Taastrup, Greve & Ishøj</p>
@@ -50,7 +50,7 @@
 </div>
 <div class="col-sm-6">
     <div class="card">
-        <img src="/img/byer/gentofte.svg" class="card-img-top" alt="Nord" width="300px">
+        <img src="/img/byer/gentofte.png" class="card-img-top" alt="Nord" width="300px">
     <div class="card-body">
         <h5 class="card-title">Nord for København</h5>
             <p class="card-text">Dækker Gentofte, Lyngby-Taarbæk, Gladsaxe, Herlev, Rudersdal & Hørsholm</p>
