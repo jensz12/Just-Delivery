@@ -75,6 +75,22 @@ a:hover, a:active {
   .navbar .navbar-nav .nav-link:not(.disabled):focus {
 	color: #ffffff;
   }
+  .navbar .navbar-nav .dropdown-menu {
+	background-color: #fa0029;
+	border-color: #e30227;
+  }
+  .navbar .navbar-nav .dropdown-menu .dropdown-item {
+	color: #ffffff;
+  }
+  .navbar .navbar-nav .dropdown-menu .dropdown-item:hover,
+  .navbar .navbar-nav .dropdown-menu .dropdown-item:focus,
+  .navbar .navbar-nav .dropdown-menu .dropdown-item.active {
+	color: #ffffff;
+	background-color: #e30227;
+  }
+  .navbar .navbar-nav .dropdown-menu .dropdown-divider {
+	border-top-color: #e30227;
+  }
   .navbar .navbar-nav .nav-item.active .nav-link,
   .navbar .navbar-nav .nav-item.active .nav-link:hover,
   .navbar .navbar-nav .nav-item.active .nav-link:focus,
