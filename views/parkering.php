@@ -5,7 +5,7 @@
 
 <div class="row">
 <?php foreach ($this->rests as $rest): ?>
-  <div class="col-sm-6 rest" data-search="<?php echo remove_accents($rest['navn']); ?>">
+  <div class="col-md-6 rest" data-search="<?php echo remove_accents($rest['navn']); ?>">
     <div class="card">
       <div class="card-body">
         <h2 class="card-title"><?php echo $rest['navn']; ?></h2>
