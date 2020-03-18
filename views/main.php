@@ -42,17 +42,13 @@
 <header>
 <?php $this->partial('partials/nav.php'); ?>
 </header>
-<div class="container">
-  <div class="row">
-    <div class="col-lg-12 col-md-12">
+<main class="container">
       <?php $this->yieldView(); ?>
       <div class="card">
         <div class="card-body">
 		    <p>Just Eat er <b>ikke</b> ansvarlige for indholdet på denne side. Fejl og forbedringer kan sendes til <a href="mailto:jens@jensz12.com">Jens</a>. Websiden er lavet med hjælp fra <a href="https://spirit55555.dk">Anders</a>. Restaurant listen er sidst opdateret i marts <?php echo date("Y")?>.</p>
         </div>
       </div>
-    </div>
-  </div>
 </div>
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"  crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" crossorigin="anonymous"></script>
