@@ -1,6 +1,6 @@
 <div class="row">
 <?php foreach ($this->cities as $url => $city): ?>
-  <div class="col-sm-6">
+  <div class="col-md-6">
     <div class="card">
       <div class="card-body">
         <h1 class="card-title"><?php echo $city['name']; ?></h1>
