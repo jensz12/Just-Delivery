@@ -13,14 +13,9 @@
       <li class="nav-item dropdown">
 						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fal fa-parking fa-fw"></i> Parkering</a>
 						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-							<a class="dropdown-item" href="/parkering/aalborg"><i class="fal fa-parking fa-fw" aria-hidden="true"></i> Aalborg</a>
-							<a class="dropdown-item" href="/parkering/aarhus"><i class="fal fa-parking fa-fw" aria-hidden="true"></i> Aarhus</a>
-              <a class="dropdown-item" href="/parkering/hilleroed"><i class="fal fa-parking fa-fw" aria-hidden="true"></i> Hillerød</a>
-              <a class="dropdown-item" href="/parkering/cph"><i class="fal fa-parking fa-fw" aria-hidden="true"></i> København</a>
-              <a class="dropdown-item" href="/parkering/nord"><i class="fal fa-parking fa-fw" aria-hidden="true"></i> Nord for København</a>
-              <a class="dropdown-item" href="/parkering/vestegnen"><i class="fal fa-parking fa-fw" aria-hidden="true"></i> Vestegnen</a>
-              <a class="dropdown-item" href="/parkering/odense"><i class="fal fa-parking fa-fw" aria-hidden="true"></i> Odense</a>
-              <a class="dropdown-item" href="/parkering/roskilde"><i class="fal fa-parking fa-fw" aria-hidden="true"></i> Roskilde</a>
+              <?php foreach ($this->cities as $url => $city): ?>
+							<a class="dropdown-item" href="/parkering/<?php echo $url; ?>"><i class="fal fa-parking fa-fw" aria-hidden="true"></i> <?php echo $city['name']; ?></a>
+              <?php endforeach; ?>
 						</div>
           </li>
 					<li class="nav-item">

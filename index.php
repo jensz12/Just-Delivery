@@ -4,6 +4,7 @@ require 'inc/functions.php';
 $klein = new \Klein\Klein();
 
 $klein->respond(function($request, $response, $service) {
+	$service->cities = include 'config/cities.php';
 	$service->layout('views/main.php');
 });
 
