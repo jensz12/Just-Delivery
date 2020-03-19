@@ -43,7 +43,7 @@
           </table>
           <?php foreach ($this->rests as $rest): ?>
           <div class="modal fade" tabindex="-1" id="modal-rest-<?php echo $rest['id']; ?>" role="dialog">
-            <div class="modal-dialog" role="document">
+            <div class="modal-dialog modal-dialog-centered" role="document">
               <div class="modal-content">
                  <div class="modal-header">
                     <h5 class="modal-title"><?php echo $rest['navn']; ?></h5>
