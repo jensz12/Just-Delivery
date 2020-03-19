@@ -55,7 +55,8 @@
                     <p><?php echo $rest['parkering']; ?></p>
                   </div>
                   <div class="modal-footer">
-                  <a href="https://www.google.com/maps/dir/?api=1&origin=&destination=<?php echo urlencode($rest['adresse']); ?>" class="btn btn-outline-dark"><i class="fal fa-map-marker-check"></i> Naviger til</a>
+                  <a href="https://www.google.com/maps/dir/?api=1&origin=&destination=<?php echo urlencode($rest['adresse']); ?>" class="btn btn-outline-dark"><i class="fal fa-map-marker-check"></i> Naviger til resaturanten</a>
+                  <a href="tel:<?php echo $rest['tlf']; ?>" class="btn btn-outline-dark"><i class="fal fa-phone"></i> Ring til resaturanten</a>
                   </div>
               </div>
             </div>
