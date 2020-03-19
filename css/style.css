@@ -18,16 +18,15 @@ body {
 .img {
   margin: 30px;
 }
+main {
+	margin-top: 70px;
+}
 .card {
   margin-bottom: 20px;
-  margin-top: 70px;
   background-color: #e9ecef;
 }
 .list-group-item {
   background-color: #e9ecef;
-}
-.jumbotron {
-    margin-top: 70px;
 }
 a:link, a:visited {
 	color: #000000;
