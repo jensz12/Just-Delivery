@@ -6,7 +6,7 @@ return array (
     ),
     'aarhus' => array(
         'name' => 'Aarhus',
-        'desc' => '',
+        'desc' => 'Dækker Aarhus',
     ),
     'hilleroed' => array(
         'name' => 'Hillerød',
@@ -26,11 +26,11 @@ return array (
     ),
     'odense' => array(
         'name' => 'Odense',
-        'desc' => '',
+        'desc' => 'Dækker Odense',
     ),
     'roskilde' => array(
         'name' => 'Roskilde',
-        'desc' => '',
+        'desc' => 'Dækker Roskilde',
     ),
 );
 ?>
