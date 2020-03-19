@@ -2,7 +2,7 @@
 return array (
     'aalborg' => array(
         'name' => 'Aalborg',
-        'desc' => 'Dækker Aalborg & Nørresundby',
+        'desc' => 'Dækker Aalborg, Nørresundby & Frejlev',
     ),
     'aarhus' => array(
         'name' => 'Aarhus',
