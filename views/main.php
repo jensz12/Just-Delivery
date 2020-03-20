@@ -43,36 +43,36 @@
 <?php $this->partial('partials/nav.php'); ?>
 </header>
 <main class="container">
-			<?php $this->yieldView(); ?>
-			<div class="card">
-				<div class="card-body">
-				<p>Just Eat er <b>ikke</b> ansvarlige for indholdet på denne side. Fejl og forbedringer kan sendes til <a href="mailto:jens@jensz12.com">Jens</a>. Websiden er lavet med hjælp fra <a href="https://spirit55555.dk">Anders</a>. Restaurant listen er sidst opdateret i marts <?php echo date("Y")?>.</p>
-				</div>
-			</div>
+	<?php $this->yieldView(); ?>
+	<div class="card">
+		<div class="card-body">
+			<p>Just Eat er <b>ikke</b> ansvarlige for indholdet på denne side. Fejl og forbedringer kan sendes til <a href="mailto:jens@jensz12.com">Jens</a>. Websiden er lavet med hjælp fra <a href="https://spirit55555.dk">Anders</a>. Restaurant listen er sidst opdateret i marts <?php echo date("Y")?>.</p>
+		</div>
+	</div>
 </div>
 <!--Needs a https://www.php.net/manual/en/function.isset.php -->
 <?php foreach ($this->rests as $rest): ?>
-					<div class="modal fade" tabindex="-1" id="modal-rest-<?php echo $rest['id']; ?>" role="dialog">
-						<div class="modal-dialog modal-dialog-centered" role="document">
-							<div class="modal-content">
-								 <div class="modal-header">
-										<h5 class="modal-title"><?php echo $rest['navn']; ?></h5>
-											<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-											 <span aria-hidden="true">&times;</span>
-											</button>
-									</div>
-									<div class="modal-body">
-										<p><?php echo $rest['parkering']; ?></p>
-									</div>
-									<div class="modal-footer">
-									<a href="https://www.google.com/maps/dir/?api=1&origin=&destination=<?php echo urlencode($rest['adresse']); ?>" class="btn btn-outline-dark"><i class="fal fa-map-marker-check"></i> Naviger til resaturanten</a>
-									<a href="tel:<?php echo $rest['tlf']; ?>" class="btn btn-outline-dark"><i class="fal fa-phone"></i> Ring til resaturanten</a>
-									</div>
-							</div>
-						</div>
+	<div class="modal fade" tabindex="-1" id="modal-rest-<?php echo $rest['id']; ?>" role="dialog">
+		<div class="modal-dialog modal-dialog-centered" role="document">
+			<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title"><?php echo $rest['navn']; ?></h5>
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+								<span aria-hidden="true">&times;</span>
+							</button>
 					</div>
-				</div>
-				<?php endforeach; ?>
+					<div class="modal-body">
+						<p><?php echo $rest['parkering']; ?></p>
+					</div>
+					<div class="modal-footer">
+					<a href="https://www.google.com/maps/dir/?api=1&origin=&destination=<?php echo urlencode($rest['adresse']); ?>" class="btn btn-outline-dark"><i class="fal fa-map-marker-check"></i> Naviger til resaturanten</a>
+					<a href="tel:<?php echo $rest['tlf']; ?>" class="btn btn-outline-dark"><i class="fal fa-phone"></i> Ring til resaturanten</a>
+					</div>
+			</div>
+		</div>
+	</div>
+</div>
+<?php endforeach; ?>
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"  crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"crossorigin="anonymous"></script>
