@@ -215,12 +215,17 @@ $klein->respond('GET', '/convert/F9JN6kZrRzMcnEqQ', function($request, $response
 		$result = $mysqli->query('SELECT * FROM rest');
 
 		while ($rest = $result->fetch_assoc()) {
-			//Split old address
-			list($address, $postcode) = explode(',', $rest['adresse']);
-			$address = trim($address);
-			$postcode = trim($postcode);
+			//Split old address field
+			list($address, $postcode_city) = explode(',', $rest['by']);
 
-			$sql = 'INSERT INTO rest (city_is, name, address, postcode, city, tel, parking, note) VALUES ("'.$city['new_city_id'].'","'.$rest['navn'].'","'.$address.'","'.$postcode.'","'.$rest['by'].'","'.$rest['tlf'].'","'.$rest['parkering'].'","'.$rest['note'].'")';
+			$address = trim($address);
+
+			preg_match('/([0-9]{4}) (.+)/', $postcode_city, $matches);
+
+			$postcode = $matches[1];
+			$city_field = trim($matches[2]);
+
+			$sql = 'INSERT INTO rest (city_is, name, address, postcode, city, tel, parking, note) VALUES ("'.$city['new_city_id'].'","'.$rest['navn'].'","'.$address.'","'.$postcode.'","'.$city_field.'","'.$rest['tlf'].'","'.$rest['parkering'].'","'.$rest['note'].'")';
 			$mysqli_new->query($sql);
 		}
 
