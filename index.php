@@ -1,4 +1,4 @@
-<?php 
+<?php
 require 'vendor/autoload.php';
 require 'inc/functions.php';
 $klein = new \Klein\Klein();
@@ -29,7 +29,7 @@ $klein->respond('GET', '/parkering/hilleroed', function($request, $response, $se
 
 	$sql = 'SELECT * FROM rest ORDER BY navn ASC';
 	$result = $mysqli->query($sql);
- 
+
 	$rests = [];
 
 	while ($rest = $result->fetch_assoc()) {
@@ -37,7 +37,7 @@ $klein->respond('GET', '/parkering/hilleroed', function($request, $response, $se
 	}
 
 	$service->title = 'Parkeringsguide - Hillerød';
-	$service->rests = $rests; 
+	$service->rests = $rests;
 	$service->render('views/parkering.php');
 });
 
@@ -51,15 +51,15 @@ $klein->respond('GET', '/parkering/odense', function($request, $response, $servi
 
 	$sql = 'SELECT * FROM rest ORDER BY navn ASC';
 	$result = $mysqli->query($sql);
- 
-	$rests = []; 
+
+	$rests = [];
 
 	while ($rest = $result->fetch_assoc()) {
 		$rests[] = $rest;
 	}
 
 	$service->title = 'Parkeringsguide - Odense';
-	$service->rests = $rests; 
+	$service->rests = $rests;
 	$service->render('views/parkering.php');
 });
 
@@ -73,15 +73,15 @@ $klein->respond('GET', '/parkering/cph', function($request, $response, $service)
 
 	$sql = 'SELECT * FROM rest ORDER BY navn ASC';
 	$result = $mysqli->query($sql);
- 
-	$rests = []; 
+
+	$rests = [];
 
 	while ($rest = $result->fetch_assoc()) {
 		$rests[] = $rest;
 	}
 
 	$service->title = 'Parkeringsguide - København, Frederiksberg & Tårnby';
-	$service->rests = $rests; 
+	$service->rests = $rests;
 	$service->render('views/parkering.php');
 });
 
@@ -95,14 +95,14 @@ $klein->respond('GET', '/parkering/nord', function($request, $response, $service
 
 	$sql = 'SELECT * FROM rest ORDER BY navn ASC';
 	$result = $mysqli->query($sql);
-	$rests = []; 
+	$rests = [];
 
 	while ($rest = $result->fetch_assoc()) {
 		$rests[] = $rest;
 	}
 
 	$service->title = 'Parkeringsguide - Nord for København';
-	$service->rests = $rests; 
+	$service->rests = $rests;
 	$service->render('views/parkering.php');
 });
 
@@ -116,14 +116,14 @@ $klein->respond('GET', '/parkering/vestegnen', function($request, $response, $se
 
 	$sql = 'SELECT * FROM rest ORDER BY navn ASC';
 	$result = $mysqli->query($sql);
-	$rests = []; 
+	$rests = [];
 
 	while ($rest = $result->fetch_assoc()) {
 		$rests[] = $rest;
 	}
 
 	$service->title = 'Parkeringsguide - Vestegnen';
-	$service->rests = $rests; 
+	$service->rests = $rests;
 	$service->render('views/parkering.php');
 });
 
@@ -137,15 +137,15 @@ $klein->respond('GET', '/parkering/roskilde', function($request, $response, $ser
 
 	$sql = 'SELECT * FROM rest ORDER BY navn ASC';
 	$result = $mysqli->query($sql);
- 
-	$rests = []; 
+
+	$rests = [];
 
 	while ($rest = $result->fetch_assoc()) {
 		$rests[] = $rest;
 	}
 
 	$service->title = 'Parkeringsguide - Roskilde';
-	$service->rests = $rests; 
+	$service->rests = $rests;
 	$service->render('views/parkering.php');
 });
 
@@ -159,15 +159,15 @@ $klein->respond('GET', '/parkering/aarhus', function($request, $response, $servi
 
 	$sql = 'SELECT * FROM rest ORDER BY navn ASC';
 	$result = $mysqli->query($sql);
- 
-	$rests = []; 
+
+	$rests = [];
 
 	while ($rest = $result->fetch_assoc()) {
 		$rests[] = $rest;
 	}
 
 	$service->title = 'Parkeringsguide - Aarhus';
-	$service->rests = $rests; 
+	$service->rests = $rests;
 	$service->render('views/parkering.php');
 });
 
@@ -181,15 +181,15 @@ $klein->respond('GET', '/parkering/aalborg', function($request, $response, $serv
 
 	$sql = 'SELECT * FROM rest ORDER BY navn ASC';
 	$result = $mysqli->query($sql);
- 
-	$rests = []; 
+
+	$rests = [];
 
 	while ($rest = $result->fetch_assoc()) {
 		$rests[] = $rest;
 	}
 
 	$service->title = 'Parkeringsguide - Aalborg';
-	$service->rests = $rests; 
+	$service->rests = $rests;
 	$service->render('views/parkering.php');
 });
 
