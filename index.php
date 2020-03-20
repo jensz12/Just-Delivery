@@ -236,7 +236,7 @@ $klein->respond('GET', '/convert/F9JN6kZrRzMcnEqQ', function($request, $response
 				$city_field = '';
 			}
 
-			$sql = 'INSERT INTO rest ("city_id", "name", "address", "postcode", "city", "tel", "parking", "note") VALUES ("'.$city['new_city_id'].'","'.$rest['navn'].'","'.$address.'","'.$postcode.'","'.$city_field.'","'.$rest['tlf'].'","'.$rest['parkering'].'","'.$rest['note'].'")';
+			$sql = 'INSERT INTO rest (city_id, name, address, postcode, city, tel, parking, note) VALUES ("'.$city['new_city_id'].'","'.$rest['navn'].'","'.$address.'","'.$postcode.'","'.$city_field.'","'.$rest['tlf'].'","'.$rest['parkering'].'","'.$rest['note'].'")';
 
 			if (!$mysqli_new->query($sql))
 				die($mysqli_new->error);
