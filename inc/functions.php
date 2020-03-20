@@ -9,4 +9,28 @@ function remove_accents($text) {
 
 	return $text;
 }
+
+function get_cities() {
+	global $mysqli;
+
+	$sql = 'SELECT * FROM city ORDER BY name ASC';
+	$result = $mysqli->query($sql);
+
+	$cities = [];
+
+	while ($city = $result->fetch_assoc()) {
+		$cities[] = $city;
+	}
+
+	return $cities;
+}
+
+function get_city_by_url($url) {
+	global $mysqli;
+
+	$sql = 'SELECT * FROM city WHERE url = "'.$url.'"';
+	$result = $mysqli->query($sql);
+
+	return $result->fetch_assoc();
+}
 ?>
