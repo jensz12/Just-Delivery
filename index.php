@@ -212,6 +212,8 @@ $klein->respond('GET', '/convert/F9JN6kZrRzMcnEqQ', function($request, $response
 		if ($mysqli->connect_errno)
 			die('Der kunne ikke oprettes forbindelse til '.$city['mysql']['database'].'. Prøv igen om lidt');
 
+		$result = $mysqli->query('SELECT * FROM rest');
+
 		while ($rest = $result->fetch_assoc()) {
 			//Split old address
 			list($address, $postcode) = explode($rest['adresse']);
