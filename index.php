@@ -216,7 +216,7 @@ $klein->respond('GET', '/convert/F9JN6kZrRzMcnEqQ', function($request, $response
 
 		while ($rest = $result->fetch_assoc()) {
 			//Split old address
-			list($address, $postcode) = explode($rest['adresse']);
+			list($address, $postcode) = explode(',', $rest['adresse']);
 			$address = trim($address);
 			$postcode = trim($postcode);
 

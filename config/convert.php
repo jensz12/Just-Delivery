@@ -36,7 +36,7 @@ return array(
 		'mysql' => array(
 			'username' => 'jensz12_vest',
 			'password' => '0H%[4)Xn(n&t',
-			'database' => 'jensz12_vest',
+			'database' => 'jensz12_je_vest',
 		),
 		'new_city_id' => 5,
 	),
