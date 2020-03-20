@@ -224,7 +224,7 @@ $klein->respond('GET', '/convert/F9JN6kZrRzMcnEqQ', function($request, $response
 				preg_match('/([0-9]{4}) (.+)/', $postcode_city, $matches);
 
 				if (empty($matches))
-					echo $city['mysql']['database'].' - '.$rest['name'].'<br />';
+					echo $city['mysql']['database'].' - '.$rest['navn'].'<br />';
 
 				$postcode = $matches[1];
 				$city_field = trim($matches[2]);
