@@ -205,6 +205,11 @@ $klein->respond('GET', '/convert/F9JN6kZrRzMcnEqQ', function($request, $response
 	if ($mysqli_new->connect_errno)
 		die('Der kunne ikke oprettes forbindelse til jensz12_je_new. Prøv igen om lidt');
 
+	$result = $mysqli->query('SELECT * FROM rest');
+
+	if ($result->num_rows != 0)
+		die('Ny database ikke tom, tøm den og prøv igen!');
+
 	foreach ($cities as $city) {
 		$mysqli = new mysqli('localhost' , $city['mysql']['username'], $city['mysql']['password'], $city['mysql']['database']);
 		$mysqli->set_charset('utf8');
