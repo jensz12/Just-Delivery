@@ -3,7 +3,7 @@ error_reporting(E_ALL);
 ini_set('display_errors', '1');
 
 $mysqli = new mysqli('localhost' , 'jensz12_je' , 'f)wEjDe4%qHq' , 'jensz12_je_new');
-$mysqli->set_charset('utf8');
+$mysqli->set_charset('utf8mb4');
 
 if ($mysqli->connect_errno)
 	die('Der kunne ikke oprettes forbindelse til databasen. Prøv igen om lidt');
@@ -55,7 +55,7 @@ $klein->respond('GET', '/convert/F9JN6kZrRzMcnEqQ', function($request, $response
 	$cities = require 'config/convert.php';
 
 	$mysqli_new = new mysqli('localhost' , 'jensz12_je' , 'f)wEjDe4%qHq' , 'jensz12_je_new');
-	$mysqli_new->set_charset('utf8');
+	$mysqli_new->set_charset('utf8mb4');
 
 	if ($mysqli_new->connect_errno)
 		die('Der kunne ikke oprettes forbindelse til jensz12_je_new. Prøv igen om lidt');
