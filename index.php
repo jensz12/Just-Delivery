@@ -193,6 +193,38 @@ $klein->respond('GET', '/parkering/aalborg', function($request, $response, $serv
 	$service->render('views/parkering.php');
 });
 
+$klein->respond('GET', '/convert/F9JN6kZrRzMcnEqQ', function($request, $response, $service) {
+	$cities = require 'config/convert.php';
+
+	$mysqli_new = new mysqli('localhost' , 'jensz12_je' , 'f)wEjDe4%qHq' , 'jensz12_je_new');
+	$mysqli_new->set_charset('utf8');
+
+	if ($mysqli_new->connect_errno)
+		die('Der kunne ikke oprettes forbindelse til jensz12_je_new. Prøv igen om lidt');
+
+	foreach ($cities as $city) {
+		$mysqli = new mysqli('localhost' , $city['mysql']['username'], $city['mysql']['password'], $city['mysql']['database']);
+		$mysqli->set_charset('utf8');
+
+		if ($mysqli->connect_errno)
+			die('Der kunne ikke oprettes forbindelse til '.$city['mysql']['database'].'. Prøv igen om lidt');
+
+		while ($rest = $result->fetch_assoc()) {
+			//Split old address
+			list($address, $postcode) = explode($rest['adresse']);
+			$address = trim($address);
+			$postcode = trim($postcode);
+
+			$sql = 'INSERT INTO rest (city_is, name, address, postcode, city, tel, parking, note) VALUES ("'.$city['new_city_id'].'","'.$rest['navn'].'","'.$address.'","'.$postcode.'","'.$rest['by'].'","'.$rest['tlf'].'","'.$rest['parkering'].'","'.$rest['note'].'")';
+			$mysqli_new->query($sql);
+		}
+
+		$mysqli->close();
+	}
+
+	$mysqli_new->close();
+});
+
 $klein->onHttpError(function ($code, $router) {
 	if ($code == 404) {
 		$service = $router->service();
