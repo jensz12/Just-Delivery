@@ -39,7 +39,7 @@ $klein->onHttpError(function ($code, $router) {
 		$service = $router->service();
 		$service->title = '404 - Siden blev ikke fundet';
 		$service->render('views/404.php');
-  }
+	}
 });
 
 $klein->dispatch();
