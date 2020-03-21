@@ -27,6 +27,7 @@ $klein->respond('GET', '/rest/[i:id]', function($request, $response, $service) {
 	$rest = DB::queryFirstRow('SELECT *  FROM rest WHERE id = %i', $request->id);
 
 	$service->title = $rest['name'];
+	$service->rest = $rest;
 	$service->render('views/rest.php');
 });
 
