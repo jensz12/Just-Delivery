@@ -51,63 +51,6 @@ foreach (get_cities() as $city) {
 	});
 }
 
-$klein->respond('GET', '/convert/F9JN6kZrRzMcnEqQ', function($request, $response, $service) {
-	$cities = require 'config/convert.php';
-
-	$mysqli_new = new mysqli('localhost' , 'jensz12_je' , 'f)wEjDe4%qHq' , 'jensz12_je_new');
-	$mysqli_new->set_charset('utf8mb4');
-
-	if ($mysqli_new->connect_errno)
-		die('Der kunne ikke oprettes forbindelse til jensz12_je_new. Prøv igen om lidt');
-
-	$result = $mysqli_new->query('SELECT * FROM rest');
-
-	if ($result->num_rows != 0)
-		die('Ny database ikke tom, tøm den og prøv igen!');
-
-	foreach ($cities as $city) {
-		$mysqli = new mysqli('localhost' , $city['mysql']['username'], $city['mysql']['password'], $city['mysql']['database']);
-		$mysqli->set_charset('utf8');
-
-		if ($mysqli->connect_errno)
-			die('Der kunne ikke oprettes forbindelse til '.$city['mysql']['database'].'. Prøv igen om lidt');
-
-		$result = $mysqli->query('SELECT * FROM rest');
-
-		while ($rest = $result->fetch_assoc()) {
-			if (!empty($rest['adresse'])) {
-				//Split old address field
-				list($address, $postcode_city) = explode(',', $rest['adresse']);
-
-				$address = trim($address);
-
-				preg_match('/([0-9]{4}) (.+)/', $postcode_city, $matches);
-
-				if (empty($matches))
-					echo $city['mysql']['database'].' - '.$rest['navn'].'<br />';
-
-				$postcode = $matches[1];
-				$city_field = trim($matches[2]);
-			}
-
-			else {
-				$address = '';
-				$postcode = '';
-				$city_field = '';
-			}
-
-			$sql = 'INSERT INTO rest (city_id, name, address, postcode, city, tel, parking, note) VALUES ("'.$city['new_city_id'].'","'.$rest['navn'].'","'.$address.'","'.$postcode.'","'.$city_field.'","'.$rest['tlf'].'","'.$mysqli_new->real_escape_string($rest['parkering']).'","'.$rest['note'].'")';
-
-			if (!$mysqli_new->query($sql))
-				die($mysqli_new->error);
-		}
-
-		$mysqli->close();
-	}
-
-	$mysqli_new->close();
-});
-
 $klein->onHttpError(function ($code, $router) {
 	if ($code == 404) {
 		$service = $router->service();
