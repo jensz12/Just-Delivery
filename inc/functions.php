@@ -26,4 +26,8 @@ function format_rest_address($rest) {
 
 	return $rest['address'].', '.$rest['postcode'].' '.$rest['city'];
 }
+
+function format_rest_nav_link($rest) {
+	return 'https://www.google.com/maps/dir/?api=1&origin=&destination='.urlencode(format_rest_address($rest));
+}
 ?>
