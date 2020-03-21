@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no user-scalable=no">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <title><?php echo $this->title; ?>  - Just Eat Delivery</title>
 <meta name="description" content="<?php echo $this->title; ?>  - Just Eat Delivery">
 <meta name="theme-color" content="#FA0029">
