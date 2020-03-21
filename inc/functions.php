@@ -9,27 +9,15 @@ function remove_accents($text) {
 }
 
 function get_cities() {
-	global $mysqli;
-
-	$sql = 'SELECT * FROM city ORDER BY name ASC';
-	$result = $mysqli->query($sql);
-
-	$cities = [];
-
-	while ($city = $result->fetch_assoc()) {
-		$cities[] = $city;
-	}
+	$cities = DB::query('SELECT * FROM city ORDER BY name ASC');
 
 	return $cities;
 }
 
 function get_city_by_url($url) {
-	global $mysqli;
+	$city = DB::queryFirstRow('SELECT * FROM city WHERE url = %s', $url);
 
-	$sql = 'SELECT * FROM city WHERE url = "'.$url.'"';
-	$result = $mysqli->query($sql);
-
-	return $result->fetch_assoc();
+	return $city;
 }
 
 function format_rest_address($rest) {
