@@ -65,6 +65,7 @@
 			<div class="modal-footer">
 				<a id="modal-rest-navigate" href="" class="btn btn-outline-dark"><i class="fal fa-map-marker-check"></i> Naviger til resaturanten</a>
 				<a id="modal-rest-call" href="" class="btn btn-outline-dark"><i class="fal fa-phone"></i> Ring til resaturanten</a>
+				<a id="modal-rest-link" href="" class="btn btn-outline-dark"><i class="fal fa-external-link"></i> Åben</a>
 			</div>
 		</div>
 	</div>
@@ -105,11 +106,13 @@ $('#modal-rest').on('show.bs.modal', function (event){
 	var parking  = button.data('parking');
 	var navigate = button.data('navigate');
 	var call     = button.data('call');
+	var link     = button.data('link');
 
 	$('#modal-rest-name').text(name);
 	$('#modal-rest-parking').html(parking);
 	$('#modal-rest-navigate').attr('href', navigate);
 	$('#modal-rest-call').attr('href', call);
+	$('#modal-rest-link').attr('href', link);
 })
 </script>
 </body>
