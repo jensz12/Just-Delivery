@@ -23,6 +23,13 @@ $klein->respond('GET', '/bg', function($request, $response, $service) {
 	$service->render('views/bg.php');
 });
 
+$klein->respond('GET', '/rest/[i:id]', function($request, $response, $service) {
+	$rest = DB::queryFirstRow('SELECT *  FROM rest WHERE id = %i', $request->id);
+
+	$service->title = $rest['name'];
+	$service->render('views/rest.php');
+});
+
 foreach (get_cities() as $city) {
 	$klein->respond('GET', '/parkering/['.$city['url'].':city]', function($request, $response, $service) {
 		$city = get_city_by_url($request->city);
