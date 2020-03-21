@@ -79,27 +79,27 @@
 <script>
 var ref;
 var update_list = function(){
-		var rest_find = jQuery('#rest-find').val().toLowerCase();
+	var rest_find = jQuery('#rest-find').val().toLowerCase();
 
-		jQuery('.rest').each(function(){
-				var search = jQuery(this).data('search').toString();
+	jQuery('.rest').each(function(){
+		var search = jQuery(this).data('search').toString();
 
-				if (search.indexOf(rest_find) !== -1)
-						jQuery(this).removeClass('hide');
-				else
-						jQuery(this).addClass('hide');
-		});
+		if (search.indexOf(rest_find) !== -1)
+			jQuery(this).removeClass('hide');
+		else
+			jQuery(this).addClass('hide');
+	});
 };
 
 var wrapper = function(){
-		window.clearTimeout(ref);
-		ref = window.setTimeout(update_list, 150);
+	window.clearTimeout(ref);
+	ref = window.setTimeout(update_list, 150);
 };
 
 jQuery(function(){
-		jQuery('#rest-find').keyup(function(){
-				wrapper();
-		});
+	jQuery('#rest-find').keyup(function(){
+		wrapper();
+	});
 });
 </script>
 </body>
