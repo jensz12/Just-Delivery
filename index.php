@@ -23,8 +23,11 @@ $klein->respond('GET', '/bg', function($request, $response, $service) {
 	$service->render('views/bg.php');
 });
 
-$klein->respond('GET', '/rest/[i:id]', function($request, $response, $service) {
+$klein->respond('GET', '/rest/[i:id]', function($request, $response, $service) use ($klein) {
 	$rest = get_rest_by_id($request->id);
+
+	if (!isset($rest))
+		$klein->abort(404);
 
 	$service->title = $rest['name'];
 	$service->rest = $rest;
