@@ -74,9 +74,9 @@
 				<p id="modal-rest-parking"></p>
 			</div>
 			<div class="modal-footer">
-				<a id="modal-rest-navigate" href="" class="btn btn-outline-dark"><i class="fal fa-map-marker-check"></i> Naviger til resaturanten</a>
-				<a id="modal-rest-call" href="" class="btn btn-outline-dark"><i class="fal fa-phone"></i> Ring til resaturanten</a>
-				<a id="modal-rest-link" href="" class="btn btn-outline-dark"><i class="fal fa-external-link"></i> Åben på ny side</a>
+				<a id="modal-rest-navigate" href="" class="btn btn-block btn-outline-dark"><i class="fal fa-map-marker-check"></i> Naviger til resaturanten</a>
+				<a id="modal-rest-call" href="" class="btn btn-block btn-outline-dark"><i class="fal fa-phone"></i> Ring til resaturanten</a>
+				<a id="modal-rest-link" href="" class="btn btn-block btn-outline-dark"><i class="fal fa-external-link"></i> Åben på ny side</a>
 			</div>
 		</div>
 	</div>
