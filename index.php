@@ -45,6 +45,7 @@ foreach (get_cities() as $city) {
 
 		$service->title = 'Parkeringsguide - '.$city['name'];
 		$service->breadcrumb = [$city['name']];
+		$service->city = $city;
 		$service->rests = $rests;
 		$service->render('views/parking.php');
 	});
