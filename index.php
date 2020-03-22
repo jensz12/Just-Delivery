@@ -29,7 +29,10 @@ $klein->respond('GET', '/rest/[i:id]', function($request, $response, $service) u
 	if (!isset($rest))
 		$klein->abort(404);
 
+	$city = get_city_by_id($rest['city_id']);
+
 	$service->title = $rest['name'];
+	$service->breadcrumb = ['/parkering/'.$city['url'] => $city['name'], $rest['name']];
 	$service->rest = $rest;
 	$service->render('views/rest.php');
 });
@@ -40,6 +43,7 @@ foreach (get_cities() as $city) {
 		$rests = get_rests_by_city_id($city['id']);
 
 		$service->title = 'Parkeringsguide - '.$city['name'];
+		$service->breadcrumb = [$city['name']];
 		$service->rests = $rests;
 		$service->render('views/parkering.php');
 	});
@@ -49,6 +53,7 @@ $klein->onHttpError(function ($code, $router) {
 	if ($code == 404) {
 		$service = $router->service();
 		$service->title = '404 - Siden blev ikke fundet';
+		$service->breadcrumb = ['404'];
 		$service->render('views/404.php');
 	}
 });

@@ -43,6 +43,15 @@
 <?php $this->partial('partials/nav.php'); ?>
 </header>
 <main class="container">
+	<?php if (isset($this->breadcrumb)): ?>
+	<div class="card">
+		<nav aria-label="breadcrumb">
+			<ol class="breadcrumb">
+				<?php echo format_breadcrumb($this->breadcrumb); ?>
+			</ol>
+		</nav>
+	</div>
+	<?php endif; ?>
 	<?php $this->yieldView(); ?>
 	<div class="card">
 		<div class="card-body">
