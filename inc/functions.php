@@ -40,6 +40,8 @@ function format_rest_address($rest) {
 }
 
 function format_rest_nav_link($rest) {
-	return 'https://www.google.com/maps/dir/?api=1&origin=&destination='.urlencode(format_rest_address($rest));
+	$nav_link = 'https://www.google.com/maps/dir/?api=1&origin=&destination='.urlencode(format_rest_address($rest));
+
+	return $nav_link;
 }
 ?>
