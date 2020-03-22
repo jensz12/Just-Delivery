@@ -131,8 +131,15 @@ $('#modal-rest').on('show.bs.modal', function (event){
 	$('#modal-rest-name').text(name);
 	$('#modal-rest-parking').html(parking);
 	$('#modal-rest-navigate').attr('href', navigate);
-	$('#modal-rest-call').attr('href', call);
 	$('#modal-rest-link').attr('href', link);
+
+	if (call === 'tel:')
+		$('#modal-rest-call').addClass('hide');
+
+	else {
+		$('#modal-rest-call').attr('href', call);
+		$('#modal-rest-call').removeClass('hide');
+	}
 })
 </script>
 </body>
