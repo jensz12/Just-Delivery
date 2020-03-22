@@ -18,10 +18,10 @@ $klein->respond('GET', '/', function($request, $response, $service) {
 	$service->render('views/front.php');
 });
 
-$klein->respond('GET', '/bg', function($request, $response, $service) {
+$klein->respond('GET', '/baggrunde', function($request, $response, $service) {
 	$service->title = 'Baggrunde';
 	$service->backgrounds = get_backgrounds();
-	$service->render('views/bg.php');
+	$service->render('views/backgrounds.php');
 });
 
 $klein->respond('GET', '/rest/[i:id]', function($request, $response, $service) use ($klein) {
@@ -46,7 +46,7 @@ foreach (get_cities() as $city) {
 		$service->title = 'Parkeringsguide - '.$city['name'];
 		$service->breadcrumb = [$city['name']];
 		$service->rests = $rests;
-		$service->render('views/parkering.php');
+		$service->render('views/parking.php');
 	});
 }
 

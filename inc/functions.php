@@ -9,7 +9,7 @@ function remove_accents($text) {
 }
 
 function get_backgrounds() {
-	$backgrounds = include 'config/bg.php';
+	$backgrounds = include 'config/backgrounds.php';
 
 	return $backgrounds;
 }
