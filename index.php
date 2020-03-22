@@ -20,12 +20,12 @@ $klein->respond('GET', '/', function($request, $response, $service) {
 
 $klein->respond('GET', '/login', function($request, $response, $service) {
 	$service->title = 'Login';
-	$service->render('views/login.php');
+	$service->render('views/admin/login.php');
 });
 
 $klein->respond('GET', '/admin', function($request, $response, $service) {
 	$service->title = 'Admin';
-	$service->render('views/admin.php');
+	$service->render('views/admin/admin.php');
 });
 
 $klein->respond('GET', '/baggrunde', function($request, $response, $service) {

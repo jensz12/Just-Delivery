@@ -19,6 +19,12 @@
 				<li class="nav-item">
 					<a class="nav-link" href="/baggrunde"><i class="fal fa-mobile-android fa-fw"></i> Baggrunde</a>
 				</li>
+				<!-- Skal være i højre side -->
+				<ul class="navbar-nav navbar-right">
+					<li class="nav-item">
+						<a class="nav-link" href="/admin"><i class="fal fa-sign-in"></i> Admin</a>
+					</li>
+				</ul>
 			</ul>
 		</div>
 	</div>
