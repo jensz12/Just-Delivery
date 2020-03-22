@@ -8,6 +8,12 @@ function remove_accents($text) {
 	return $text;
 }
 
+function get_backgrounds() {
+	$backgrounds = include 'config/bg.php';
+
+	return $backgrounds;
+}
+
 function get_cities() {
 	$cities = DB::query('SELECT * FROM city ORDER BY name ASC');
 

@@ -20,6 +20,7 @@ $klein->respond('GET', '/', function($request, $response, $service) {
 
 $klein->respond('GET', '/bg', function($request, $response, $service) {
 	$service->title = 'Baggrunde';
+	$service->backgrounds = get_backgrounds();
 	$service->render('views/bg.php');
 });
 
