@@ -1,8 +1,7 @@
 <div class="card">
 	<div class="card-body">
 		<h1 class="mb-3"><?php echo $this->city['name']; ?></h1>
-		<h2>Søg efter restaurant</h2>
-		<input type="text" autofocus class="form-control" id="rest-find" aria-describedby="" placeholder="Indtast navn, adresse eller tlf. nr." />
+		<input type="text" autofocus class="form-control form-control-lg" id="rest-find" aria-describedby="" placeholder="Indtast navn, adresse eller tlf. nr." />
 		<p id="rest-result-count" class="mt-2 hide"><span></span>  resultat(er)</p>
 	</div>
 </div>
