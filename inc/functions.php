@@ -38,6 +38,12 @@ function get_rests_by_city_id($city_id) {
 	return $rests;
 }
 
+function get_rests_count($city_id) {
+	$count = DB::queryFirstField('SELECT COUNT(*) from rest WHERE city_id = %i', $city_id);
+
+	return $count;
+}
+
 function format_rest_address($rest) {
 	if (empty($rest['address']) || empty($rest['postcode']) || empty($rest['city']))
 		return;
