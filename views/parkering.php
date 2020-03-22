@@ -7,9 +7,9 @@
 		<table class="table table-striped table-hover">
 			<thead>
 				<tr>
-					<th style="width: 33%">Navn</th>
-					<th style="width: 34%">Adresse</th>
-					<th style="width: 33%">Telefon</th>
+					<th style="width: 42%">Navn</th>
+					<th style="width: 43%">Adresse</th>
+					<th style="width: 15%">Telefon</th>
 				</tr>
 			</thead>
 			<tbody>
