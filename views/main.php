@@ -88,12 +88,21 @@ var update_list = function(){
 	var rest_find = jQuery('#rest-find').val().toLowerCase();
 
 	jQuery('.rest').each(function(){
+		var matches = 0;
 		var search = jQuery(this).data('search').toString();
 
-		if (search.indexOf(rest_find) !== -1)
+		if (search.indexOf(rest_find) !== -1) {
 			jQuery(this).removeClass('hide');
+			matches++;
+		}
+
 		else
 			jQuery(this).addClass('hide');
+
+		if (matches === 0)
+			$('#rest-no-results').removeClass('hide');
+		else
+			$('#rest-no-results').addClass('hide');
 	});
 };
 

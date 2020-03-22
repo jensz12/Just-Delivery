@@ -20,6 +20,9 @@
 					<td><a class="d-block" href="tel:<?php echo $rest['tel']; ?>"><?php echo $rest['tel']; ?></a></td>
 				</tr>
 				<?php endforeach; ?>
+				<tr id="rest-no-results" class="hide">
+					<td colspan="3">Ingen resultater, prøv at søge efter noget andet.</td>
+				</tr>
 			</tbody>
 		</table>
 	</div>
