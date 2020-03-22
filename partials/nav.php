@@ -17,7 +17,7 @@
 					</div>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="/bg"><i class="fal fa-mobile-android fa-fw"></i> Baggrunde</a>
+					<a class="nav-link" href="/baggrunde"><i class="fal fa-mobile-android fa-fw"></i> Baggrunde</a>
 				</li>
 			</ul>
 		</div>
