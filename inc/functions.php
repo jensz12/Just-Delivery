@@ -20,6 +20,18 @@ function get_city_by_url($url) {
 	return $city;
 }
 
+function get_rest_by_id($id) {
+	$rest = DB::queryFirstRow('SELECT *  FROM rest WHERE id = %i', $id);
+
+	return $rest;
+}
+
+function get_rests_by_city_id($city_id) {
+	$rests = DB::query('SELECT * FROM rest WHERE city_id = %i ORDER BY name ASC', $city_id);
+
+	return $rests;
+}
+
 function format_rest_address($rest) {
 	if (empty($rest['address']) || empty($rest['postcode']) || empty($rest['city']))
 		return;

@@ -24,7 +24,7 @@ $klein->respond('GET', '/bg', function($request, $response, $service) {
 });
 
 $klein->respond('GET', '/rest/[i:id]', function($request, $response, $service) {
-	$rest = DB::queryFirstRow('SELECT *  FROM rest WHERE id = %i', $request->id);
+	$rest = get_rest_by_id($request->id);
 
 	$service->title = $rest['name'];
 	$service->rest = $rest;
@@ -34,7 +34,7 @@ $klein->respond('GET', '/rest/[i:id]', function($request, $response, $service) {
 foreach (get_cities() as $city) {
 	$klein->respond('GET', '/parkering/['.$city['url'].':city]', function($request, $response, $service) {
 		$city = get_city_by_url($request->city);
-		$rests = DB::query('SELECT * FROM rest WHERE city_id = %i ORDER BY name ASC', $city['id']);
+		$rests = get_rests_by_city_id($city['id']);
 
 		$service->title = 'Parkeringsguide - '.$city['name'];
 		$service->rests = $rests;
