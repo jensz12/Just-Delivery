@@ -88,9 +88,9 @@
 var ref;
 var update_list = function(){
 	var rest_find = jQuery('#rest-find').val().toLowerCase();
+	var matches = 0;
 
 	jQuery('.rest').each(function(){
-		var matches = 0;
 		var search = jQuery(this).data('search').toString();
 
 		if (search.indexOf(rest_find) !== -1) {
@@ -100,12 +100,20 @@ var update_list = function(){
 
 		else
 			jQuery(this).addClass('hide');
-
-		if (matches === 0)
-			$('#rest-no-results').removeClass('hide');
-		else
-			$('#rest-no-results').addClass('hide');
 	});
+
+	if (matches === 0)
+		$('#rest-no-results').removeClass('hide');
+	else
+		$('#rest-no-results').addClass('hide');
+
+	if (rest_find) {
+		$('#rest-result-count').removeClass('hide');
+		$('#rest-result-count span').text(matches);
+	}
+
+	else
+		$('#rest-result-count').addClass('hide');
 };
 
 var wrapper = function(){

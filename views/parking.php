@@ -1,6 +1,7 @@
 <div class="jumbotron">
 	<h1><i class="fal fa-search"></i> Søg efter restaurant</h1>
 	<input type="text" autofocus class="form-control" id="rest-find" aria-describedby="" placeholder="Indtast navn, adresse eller tlf. nr." />
+	<p id="rest-result-count" class="mt-2 hide"><span></span>  resultat(er)</p>
 </div>
 <div class="jumbotron">
 	<div class="table-responsive">
