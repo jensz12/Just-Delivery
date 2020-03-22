@@ -3,8 +3,8 @@
 		<h1 class="card-title">Login</h1>
 		<form>
 		<div class="form-group">
-			<label for="username">Brugernavn</label>
-			<input type="email" class="form-control" id="username" aria-describedby="username" placeholder="Indtast brugernavn">
+			<label for="username">Email</label>
+			<input type="email" class="form-control" id="username" aria-describedby="username" placeholder="jens@jensz12.com">
 		</div>
 		<div class="form-group">
 			<label for="password">Adgangskode</label>
