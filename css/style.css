@@ -14,20 +14,12 @@ body {
 	}
 }
 
-.img {
-	margin: 30px;
-}
-
 main {
 	margin-top: 70px;
 }
 
 .card {
 	margin-bottom: 20px;
-	background-color: #e9ecef;
-}
-
-.list-group-item {
 	background-color: #e9ecef;
 }
 
@@ -42,14 +34,6 @@ a:hover, a:active {
 
 .hide {
 	display: none;
-}
-
-.nav-link, .nav-item {
-	color: #ffffff;
-}
-
-.btn {
-	margin: 10px;
 }
 
 .breadcrumb {
