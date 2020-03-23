@@ -23,6 +23,11 @@ $klein->respond('GET', '/login', function($request, $response, $service) {
 	$service->render('views/admin/login.php');
 });
 
+$klein->respond('GET', '/info', function($request, $response, $service) {
+	$service->title = 'Info';
+	$service->render('views/info.php');
+});
+
 $klein->respond('GET', '/admin', function($request, $response, $service) {
 	$service->title = 'Admin';
 	$service->render('views/admin/admin.php');
