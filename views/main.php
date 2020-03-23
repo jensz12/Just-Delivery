@@ -24,7 +24,7 @@
 <link href='https://fonts.googleapis.com/css?family=Roboto:100,300' rel='stylesheet' type='text/css'>
 <script src="https://kit.fontawesome.com/774ac70799.js"></script>
 <script>
-	if ('serviceWorker' in navigator) {
+if ('serviceWorker' in navigator) {
 	window.addEventListener('load', function() {
 		navigator.serviceWorker.register('/js/sw.js').then(function(registration) {
 			// Registration was successful
