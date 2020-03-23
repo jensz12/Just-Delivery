@@ -23,6 +23,7 @@ $klein->respond('GET', '/login', function($request, $response, $service) {
 	$service->render('views/admin/login.php');
 });
 
+/* Needs a complete rework to work with multiple citys at some point */
 $klein->respond('GET', '/info', function($request, $response, $service) {
 	$service->title = 'Info';
 	$service->render('views/info.php');
