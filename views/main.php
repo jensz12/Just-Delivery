@@ -85,70 +85,7 @@
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 <script>
-var ref;
-var update_list = function(){
-	var rest_find = jQuery('#rest-find').val().toLowerCase();
-	var matches = 0;
-
-	jQuery('.rest').each(function(){
-		var search = jQuery(this).data('search').toString();
-
-		if (search.indexOf(rest_find) !== -1) {
-			jQuery(this).removeClass('hide');
-			matches++;
-		}
-
-		else
-			jQuery(this).addClass('hide');
-	});
-
-	if (matches === 0)
-		$('#rest-no-results').removeClass('hide');
-	else
-		$('#rest-no-results').addClass('hide');
-
-	if (rest_find) {
-		$('#rest-result-count').removeClass('hide');
-		$('#rest-result-count span').text(matches);
-	}
-
-	else
-		$('#rest-result-count').addClass('hide');
-};
-
-var wrapper = function(){
-	window.clearTimeout(ref);
-	ref = window.setTimeout(update_list, 150);
-};
-
-jQuery(function(){
-	jQuery('#rest-find').keyup(function(){
-		wrapper();
-	});
-});
-
-$('#modal-rest').on('show.bs.modal', function (event){
-	var button = $(event.relatedTarget);
-
-	var name     = button.data('name');
-	var parking  = button.data('parking');
-	var navigate = button.data('navigate');
-	var call     = button.data('call');
-	var link     = button.data('link');
-
-	$('#modal-rest-name').text(name);
-	$('#modal-rest-parking').html(parking);
-	$('#modal-rest-navigate').attr('href', navigate);
-	$('#modal-rest-link').attr('href', link);
-
-	if (call === 'tel:')
-		$('#modal-rest-call').addClass('hide');
-
-	else {
-		$('#modal-rest-call').attr('href', call);
-		$('#modal-rest-call').removeClass('hide');
-	}
-})
+<?php include 'js/script.js'; ?>
 </script>
 </body>
 </html>
