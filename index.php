@@ -18,7 +18,7 @@ $klein->respond('GET', '/', function($request, $response, $service) {
 	$service->render('views/front.php');
 });
 
-$klein->respond('GET', '/login', function($request, $response, $service) {
+$klein->respond('GET', '/admin/login', function($request, $response, $service) {
 	$service->title = 'Login';
 	$service->render('views/admin/login.php');
 });
