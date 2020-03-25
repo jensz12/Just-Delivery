@@ -28,7 +28,7 @@ $klein->respond('GET', '/admin', function($request, $response, $service) {
 	$service->render('views/admin/admin.php');
 });
 
-/* Needs a complete rework to work with multiple citys at some point */
+/* Needs a complete rework to work with multiple citys at some point. See Trello for more info */
 $klein->respond('GET', '/info', function($request, $response, $service) {
 	$service->title = 'Info';
 	$service->render('views/info.php');
