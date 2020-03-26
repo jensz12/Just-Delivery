@@ -1,6 +1,12 @@
 <?php
-error_reporting(E_ALL);
-ini_set('display_errors', '1');
+if ($_SERVER['HTTP_HOST'] !== 'justeat.jensz12.com') {
+	define('DEV', true);
+	error_reporting(E_ALL);
+	ini_set('display_errors', '1');
+}
+
+else
+	define('DEV', false);
 
 require 'vendor/autoload.php';
 require 'config/mysql.php';
