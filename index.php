@@ -9,7 +9,12 @@ else
 	define('DEV', false);
 
 require 'vendor/autoload.php';
-require 'config/mysql.php';
+
+if (DEV)
+	require 'config/dev.mysql.php';
+else
+	require 'config/mysql.php';
+
 require 'inc/functions.php';
 
 $klein = new \Klein\Klein();
