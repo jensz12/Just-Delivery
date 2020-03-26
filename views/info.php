@@ -20,7 +20,6 @@
 		<ul>
 			<li>Koderne til telefoner og Google konto kan findes i WikiEatia, som du kan hente via <a href="https://justeat.planday.dk">Planday</a>. Du kan også altid spørge på Slack efter dem</li>
 			<li>Koden til bommene bag BurgerKing i Aalborg C er 531E</li>
-			<li>Koden til tankkort er den samme som til telefon</li>
 		</ul>
 	</div>
 </div>
@@ -40,6 +39,7 @@
 		<ul>
 			<li>OC: <a href="tel:89888215">89888215</a></li>
 			<li>Kundeservice: <a href="tel:70208590">70208590</a></li>
+			<li>Teamleder: <a href="tel:22950659">22950659</a></li>
 		</ul>
 	</div>
 </div>
