@@ -20,10 +20,10 @@
 					<a class="nav-link" href="/baggrunde"><i class="fal fa-mobile-android fa-fw"></i> Baggrunde</a>
 				</li>
 			</ul>
-			<ul class="navbar-nav navbar-right">
+			<!--<ul class="navbar-nav navbar-right">
 				<li class="nav-item">
 					<a class="nav-link" href="/admin"><i class="fal fa-sign-in"></i> Admin</a>
-				</li>
+				</li>-->
 			</ul>
 		</div>
 	</div>
