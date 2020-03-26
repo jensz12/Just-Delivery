@@ -36,6 +36,14 @@ if ('serviceWorker' in navigator) {
 	});
 }
 </script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-43679005-24"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-43679005-24');
+</script>
 <style>
 <?php include 'css/style.css'; ?>
 </style>
