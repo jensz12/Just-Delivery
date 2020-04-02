@@ -70,7 +70,7 @@ if ('serviceWorker' in navigator) {
 	<?php $this->yieldView(); ?>
 	<div class="card">
 		<div class="card-body">
-			<p>Just Eat er <b>ikke</b> ansvarlige for indholdet på denne side. Fejl og forbedringer kan sendes til <a href="mailto:jens@jensz12.com">Jens</a>. Websiden er lavet med hjælp fra <a href="https://spirit55555.dk">Anders</a>. Restaurant listen er sidst opdateret i marts <?php echo date("Y")?>.</p>
+			<p>Just Eat er <b>ikke</b> ansvarlige for indholdet på denne side. Fejl og forbedringer kan sendes til <a href="mailto:jens@jensz12.com">Jens</a>. Websiden er lavet med hjælp fra <a href="https://spirit55555.dk">Anders</a>. Restaurant listen er sidst opdateret i marts <?php echo date("Y")?>. Aalborg ❤️</p>
 		</div>
 	</div>
 </main>
