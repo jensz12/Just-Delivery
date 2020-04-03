@@ -15,37 +15,37 @@ function get_backgrounds() {
 }
 
 function get_cities() {
-	$cities = DB::query('SELECT * FROM city ORDER BY name ASC');
+	$cities = DB::query('SELECT * FROM city WHERE active = 1 ORDER BY name ASC');
 
 	return $cities;
 }
 
 function get_city_by_id($id) {
-	$city = DB::queryFirstRow('SELECT * FROM city WHERE id = %i', $id);
+	$city = DB::queryFirstRow('SELECT * FROM city WHERE id = %i AND active = 1', $id);
 
 	return $city;
 }
 
 function get_city_by_url($url) {
-	$city = DB::queryFirstRow('SELECT * FROM city WHERE url = %s', $url);
+	$city = DB::queryFirstRow('SELECT * FROM city WHERE url = %s AND active = 1', $url);
 
 	return $city;
 }
 
 function get_rest_by_id($id) {
-	$rest = DB::queryFirstRow('SELECT *  FROM rest WHERE id = %i', $id);
+	$rest = DB::queryFirstRow('SELECT *  FROM rest WHERE id = %i AND active = 1', $id);
 
 	return $rest;
 }
 
 function get_rests_by_city_id($city_id) {
-	$rests = DB::query('SELECT * FROM rest WHERE city_id = %i ORDER BY name ASC', $city_id);
+	$rests = DB::query('SELECT * FROM rest WHERE city_id = %i AND active = 1 ORDER BY name ASC', $city_id);
 
 	return $rests;
 }
 
 function get_rests_count($city_id) {
-	$count = DB::queryFirstField('SELECT COUNT(*) from rest WHERE city_id = %i', $city_id);
+	$count = DB::queryFirstField('SELECT COUNT(*) from rest WHERE city_id = %i AND active = 1', $city_id);
 
 	return $count;
 }
