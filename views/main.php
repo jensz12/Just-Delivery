@@ -12,13 +12,13 @@
 <meta name="twitter:creator" content="@jensz12">
 <meta name="twitter:title" content="<?php echo $this->title; ?>  - Just Eat Delivery">
 <meta name="twitter:description" content="<?php echo $this->title; ?>  - Just Eat Delivery">
-<meta name="twitter:image:src" content="https://justeat.jensz12.com/img/logo/1024.png">
-<link rel="icon" href="https://justeat.jensz12.com/img/logo/1024.png">
-<link rel="manifest" href="https://justeat.jensz12.com/manifest.json">
-<link rel="apple-touch-icon" href="https://justeat.jensz12.com/img/logo/1024.png">
+<meta name="twitter:image:src" content="/img/logo/1024.png">
+<link rel="icon" href="/img/logo/1024.png">
+<link rel="manifest" href="/manifest.json">
+<link rel="apple-touch-icon" href="/img/logo/1024.png">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-title" content="<?php echo $this->title; ?> - Just Eat Delivery">
-<link rel="apple-touch-startup-image" href="https://justeat.jensz12.com/img/andet/je-bg.png">
+<link rel="apple-touch-startup-image" href="/img/andet/je-bg.png">
 <meta name="apple-mobile-web-app-status-bar-style" content="black">
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 <link href='https://fonts.googleapis.com/css?family=Roboto:100,300' rel='stylesheet' type='text/css'>
@@ -55,7 +55,7 @@ if ('serviceWorker' in navigator) {
 <main class="container">
 	<?php if(DEV): ?>
 	<div class="alert alert-danger" role="alert">
-	Dette er en udvikler side. <a class="alert-link" href="https://justeat.jensz12.com">Du kan se den rigtige side ved at klikke her</a>
+	Dette er en udvikler side. <a class="alert-link" href="https://jeparking.place">Du kan se den rigtige side ved at klikke her</a>
 	</div>
 	<?php endif; ?>
 	<?php if (isset($this->breadcrumb)): ?>

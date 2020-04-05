@@ -1,18 +1,18 @@
 {
 	"name": "Just Delivery - Just Eat",
 	"short_name": "Just Delivery - Just Eat",
-	"start_url": "https://justeat.jensz12.com",
+	"start_url": "https://jeparking.place",
 	"display": "standalone",
 	"theme_color": "#FA0029",
 	"background_color": "#FA0029",
 	"icons": [
 		{
-			"src": "https://justeat.jensz12.com/img/logo/192.png",
+			"src": "/img/logo/192.png",
 			"sizes": "192x192",
 			"type": "image/png"
 		},
 		{
-			"src": "https://justeat.jensz12.com/img/logo/512.png",
+			"src": "/img/logo/512.png",
 			"sizes": "512x512",
 			"type": "image/png"
 		}
