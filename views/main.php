@@ -55,7 +55,7 @@ if ('serviceWorker' in navigator) {
 <main class="container">
 	<?php if(DEV): ?>
 	<div class="alert alert-danger" role="alert">
-	Dette er en udvikler side. <a class="alert-link" href="https://jeparking.place">Du kan se den rigtige side ved at klikke her</a>
+	Dette er en udvikler side. <a class="alert-link" href="https://findparkering.nu">Du kan se den rigtige side ved at klikke her</a>
 	</div>
 	<?php endif; ?>
 	<?php if (isset($this->breadcrumb)): ?>
