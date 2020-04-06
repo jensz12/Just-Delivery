@@ -1,5 +1,5 @@
 <?php
-if ($_SERVER['HTTP_HOST'] !== 'justeat.jensz12.com') {
+if ($_SERVER['HTTP_HOST'] !== 'findparkering.nu') {
 	define('DEV', true);
 	error_reporting(E_ALL);
 	ini_set('display_errors', '1');
