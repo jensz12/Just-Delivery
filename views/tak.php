@@ -8,5 +8,7 @@
 		<h4>August - For at hjælpe med at teste det hele og komme med idéer</h4>
 		<hr/>
 		<h4>Det gamle Team Aalborg - For at teste den oprindelige udgave</h4>
+		<hr/>
+		<h4>Alle der har hjulpet med oplysninger om hvor man kan parkere. Uden jer, var denne side aldrig blevet til noget</h4>
 	</div>
 </div>
