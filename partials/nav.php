@@ -21,6 +21,10 @@
 				<li class="nav-item">
 					<a class="nav-link" href="/admin"><i class="fal fa-sign-in"></i> Admin</a>
 				</li>-->
+			<ul class="navbar-nav navbar-right">
+				<li class="nav-item">
+					<a class="nav-link" href="/tak"><i class="fal fa-heart"></i> Tak</a>
+				</li>
 			</ul>
 		</div>
 	</div>
