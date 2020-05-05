@@ -26,6 +26,11 @@
 					<a class="nav-link" href="/tak"><i class="fal fa-heart"></i> Tak</a>
 				</li>
 			</ul>
+			<ul class="navbar-nav navbar-right">
+				<li class="nav-item">
+					<a class="nav-link" href="/fejl"><i class="fal fa-lightbulb-on"></i> Fejl & Forbedringer</a>
+				</li>
+			</ul>
 		</div>
 	</div>
 </nav>

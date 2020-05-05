@@ -51,6 +51,12 @@ $klein->respond('GET', '/tak', function($request, $response, $service) {
 	$service->render('views/tak.php');
 });
 
+$klein->respond('GET', '/fejl', function($request, $response, $service) {
+	$service->title = 'Fejl & Forbedringer';
+	$service->backgrounds = get_backgrounds();
+	$service->render('views/fejl.php');
+});
+
 $klein->respond('GET', '/baggrunde', function($request, $response, $service) {
 	$service->title = 'Baggrunde';
 	$service->backgrounds = get_backgrounds();
