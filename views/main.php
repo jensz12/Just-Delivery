@@ -70,7 +70,7 @@ if ('serviceWorker' in navigator) {
 	<?php $this->yieldView(); ?>
 	<div class="card">
 		<div class="card-body">
-			<p>Just Eat er <b>ikke</b> ansvarlige for indholdet på denne side. Restaurant listen er sidst opdateret i marts <?php echo date("Y")?>. Aalborg ❤️</p>
+			<p>Just Eat er <b>ikke</b> ansvarlige for indholdet på denne side. Restaurant listen er sidst opdateret i maj <?php echo date("Y")?>. Aalborg ❤️</p>
 		</div>
 	</div>
 </main>
