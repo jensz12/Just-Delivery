@@ -28,6 +28,11 @@
 			</ul>
 			<ul class="navbar-nav navbar-right">
 				<li class="nav-item">
+					<a class="nav-link" href="https://static.jensz12.com/yuso.pdf"><i class="fal fa-car"></i> Yuso Guide</a>
+				</li>
+			</ul>
+			<ul class="navbar-nav navbar-right">
+				<li class="nav-item">
 					<a class="nav-link" href="/fejl"><i class="fal fa-lightbulb-on"></i> Fejl & Forbedringer</a>
 				</li>
 			</ul>
