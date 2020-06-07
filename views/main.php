@@ -6,22 +6,22 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <title><?php echo $this->title; ?>  - Just Eat Delivery</title>
 <meta name="description" content="<?php echo $this->title; ?>  - Just Eat Delivery">
-<meta name="theme-color" content="#FA0029">
+<meta name="theme-color" content="#ff8000">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="@jensz12">
 <meta name="twitter:creator" content="@jensz12">
 <meta name="twitter:title" content="<?php echo $this->title; ?>  - Just Eat Delivery">
 <meta name="twitter:description" content="<?php echo $this->title; ?>  - Just Eat Delivery">
-<meta name="twitter:image:src" content="/img/logo/1024.png">
-<link rel="icon" href="/img/logo/1024.png">
+<meta name="twitter:image:src" content="/img/logo/je-takeaway.png">
+<link rel="icon" href="/img/logo/je-takeaway.png">
 <link rel="manifest" href="/manifest.json">
-<link rel="apple-touch-icon" href="/img/logo/1024.png">
+<link rel="apple-touch-icon" href="/img/logo/je-takeaway.png">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-title" content="<?php echo $this->title; ?> - Just Eat Delivery">
 <link rel="apple-touch-startup-image" href="/img/andet/je-bg.png">
 <meta name="apple-mobile-web-app-status-bar-style" content="black">
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-<link href='https://fonts.googleapis.com/css?family=Roboto:100,300' rel='stylesheet' type='text/css'>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300&display=swap" rel="stylesheet">
 <script src="https://kit.fontawesome.com/774ac70799.js"></script>
 <script>
 if ('serviceWorker' in navigator) {

@@ -1,10 +1,10 @@
 {
-	"name": "Just Delivery - Just Eat",
-	"short_name": "Just Delivery - Just Eat",
+	"name": "Find Parkering - Just Eat",
+	"short_name": "Find Parkering - Just Eat",
 	"start_url": "https://findparkering.nu",
 	"display": "standalone",
-	"theme_color": "#FA0029",
-	"background_color": "#FA0029",
+	"theme_color": "#ff8000",
+	"background_color": "#ff8000",
 	"icons": [
 		{
 			"src": "/img/logo/192.png",
