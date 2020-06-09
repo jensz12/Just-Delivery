@@ -18,14 +18,11 @@ main {
 	margin-top: 70px;
 }
 
-.card, .jumbotron {
+.card, .jumbotron, .modal-content{
 	margin-bottom: 20px;
 	background-color: #212121;
 }
 
-.modal-content, .breadcrumb  {
-	background-color: #212121;
-}
 
 a:link, a:visited {
 	color: #ffffff;
@@ -47,6 +44,7 @@ p, .a, h1, h2, h3, h4, h5, h6, th, tr, .d-block {
 
 .breadcrumb {
 	margin-bottom: 0;
+	background-color: #212121;
 }
 
 /* Custom navbar START */
