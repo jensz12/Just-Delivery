@@ -12,10 +12,10 @@
 <meta name="twitter:creator" content="@jensz12">
 <meta name="twitter:title" content="<?php echo $this->title; ?>  - Just Eat Delivery">
 <meta name="twitter:description" content="<?php echo $this->title; ?>  - Just Eat Delivery">
-<meta name="twitter:image:src" content="/img/logo/je-takeaway.png">
-<link rel="icon" href="/img/logo/je-takeaway.png">
+<meta name="twitter:image:src" content="/img/logo/je-takeaway-badge.svg">
+<link rel="icon" href="/img/logo/je-takeaway-badge.svg">
 <link rel="manifest" href="/manifest.json">
-<link rel="apple-touch-icon" href="/img/logo/je-takeaway.png">
+<link rel="apple-touch-icon" href="/img/logo/je-takeaway-badge.svg">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-title" content="<?php echo $this->title; ?> - Just Eat Delivery">
 <link rel="apple-touch-startup-image" href="/img/andet/je-bg.png">
@@ -70,7 +70,7 @@ if ('serviceWorker' in navigator) {
 	<?php $this->yieldView(); ?>
 	<div class="card">
 		<div class="card-body">
-			<p>Just Eat er <b>ikke</b> ansvarlige for indholdet på denne side. Restaurant listen er sidst opdateret i maj <?php echo date("Y")?>. Aalborg ❤️</p>
+			<p>Just Eat er <b>ikke</b> ansvarlige for indholdet på denne side. Restaurant listen er senest opdateret i maj <?php echo date("Y")?>. <small>Made with ❤️ in Aalborg & Copenhagen </p>
 		</div>
 	</div>
 </main>
