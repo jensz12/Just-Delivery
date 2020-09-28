@@ -18,33 +18,34 @@ main {
 	margin-top: 70px;
 }
 
-.card, .jumbotron, .modal-content{
-	margin-bottom: 20px;
-	background-color: #212121;
+
+
+@media (prefers-color-scheme: light) {
+  
+  .card-title, h1, h2, p, b, card-text, a:link, a:visited, th, tr {
+    color: black;
+  }
+  .jumbotron, .card, .modal-content, .breadcrumb {
+    background-color: white;
+    margin-bottom: 20px;
+  }
+
 }
 
+@media (prefers-color-scheme: dark) {
+  
+  .card-title, h1, h2, p, b, card-text, a:link, a:visited, th, tr {
+    color: white;
+  }
+  .jumbotron, .card, .modal-content, .breadcrumb {
+    background-color: #212121;
+    margin-bottom: 20px;
+  }
 
-a:link, a:visited {
-	color: #ffffff;
-	text-decoration: none;
-}
-
-a:hover, a:active {
-	text-decoration: underline;
-}
-
-p, .a, h1, h2, h3, h4, h5, h6, th, tr, .d-block {
-	color:white;
-	text-color: white;
 }
 
 .hide {
 	display: none;
-}
-
-.breadcrumb {
-	margin-bottom: 0;
-	background-color: #212121;
 }
 
 /* Custom navbar START */
