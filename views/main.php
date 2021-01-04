@@ -70,7 +70,7 @@ if ('serviceWorker' in navigator) {
 	<?php $this->yieldView(); ?>
 	<div class="card">
 		<div class="card-body">
-			<p>Just Eat er <b>ikke</b> ansvarlige for indholdet på denne side. Senest opdateret i maj 2020. <small>Made with <i class="fal fa-heart"></i> in <a href="https://jensz12.com">Aalborg</a> & <a href="https://spirit55555.dk">København</a></p>
+			<p>&copy; 2019 - <?php echo date("Y"); ?> Jens Møller. Just Eat er <b>ikke</b> ansvarlige for indholdet på denne side. Senest opdateret i maj 2020. <small>Made with <i class="fal fa-heart"></i> in <a href="https://jensz12.com">Aalborg</a> & <a href="https://spirit55555.dk">København</a></p>
 		</div>
 	</div>
 </main>
